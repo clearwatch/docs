@@ -1,0 +1,33 @@
+---
+title: Shopify
+description: How to verify your Shopify site with Clearwatch.
+---
+
+# Verify on Shopify
+
+## Step 1: Copy your meta tag
+
+Find your verification meta tag on your [account page](https://clearwatch.app/manage). It looks like:
+
+```html
+<meta name="clearwatch-verification" content="your-unique-token">
+```
+
+## Step 2: Open the theme editor
+
+1. Go to your Shopify admin
+2. Navigate to **Online Store → Themes**
+3. Click **Actions → Edit Code** on your active theme
+
+## Step 3: Add the meta tag
+
+1. Open the `theme.liquid` file (under Layout)
+2. Find the `<head>` section near the top of the file
+3. Paste your meta tag on a new line before the closing `</head>` tag
+4. Click **Save**
+
+## Step 4: Verify
+
+Go back to your [Clearwatch account page](https://clearwatch.app/manage) and click **Verify** on your site.
+
+You can remove the meta tag after verification if you'd like.

@@ -1,0 +1,32 @@
+---
+title: How Monitoring Works
+description: How Clearwatch checks your website and detects downtime.
+---
+
+# How Monitoring Works
+
+Clearwatch sends an HTTP request to your website at regular intervals. If your site responds with an error or doesn't respond at all, we mark it as down and send you an email.
+
+## Check intervals
+
+The frequency of checks depends on your plan:
+
+| Plan | Check interval | Checks per day |
+|------|---------------|----------------|
+| Free | Every 5 minutes | 288 |
+| Starter | Every 3 minutes | 480 |
+| Pro | Every 1 minute | 1,440 |
+
+## What we check
+
+By default, we monitor your homepage. If you [verify ownership](/verification/overview) of your site, we can discover and monitor additional pages automatically.
+
+## What counts as "down"
+
+Your site is marked as down when:
+
+- It doesn't respond within 30 seconds
+- It returns an HTTP error (status code outside 200-299)
+- The connection is refused or times out
+
+When your site recovers, we send you a follow-up email with how long it was down.

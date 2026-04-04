@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Clearwatch",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#facc15",
+    "light": "#facc15",
+    "dark": "#0f0f0f"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,55 +14,39 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "how-monitoring-works",
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Features",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "features/alerts",
+              "features/weekly-reports",
+              "features/status-pages",
+              "features/page-discovery",
+              "features/ssl-monitoring"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Site Verification",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "verification/overview",
+              "verification/shopify",
+              "verification/squarespace",
+              "verification/wordpress",
+              "verification/wix",
+              "verification/other"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Account",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "account/manage",
+              "account/plans-billing"
             ]
           }
         ]
@@ -71,13 +55,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Account",
+          "href": "https://clearwatch.app/manage",
+          "icon": "user"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://clearwatch.app/blog",
           "icon": "newspaper"
         }
       ]
@@ -91,32 +75,16 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:myles@clearwatch.app"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Start Monitoring",
+      "href": "https://clearwatch.app"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }
